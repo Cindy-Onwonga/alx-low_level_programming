@@ -13,7 +13,7 @@ int _isalpha(int c)
 	char ch = c + '0';
 
 	if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
-		return (1);
-	else
 		return (0);
+	else
+		return (1);
 }
