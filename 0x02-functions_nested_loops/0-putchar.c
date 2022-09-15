@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * putChar - prints putchar followed by new linw
+ * print_putchar - prints putchar followed by new line
  *
- * Return: void
+ * Return: Always 0
  */
-void putChar(void)
+int print_putchar(void)
 {
 	int chars;
 
@@ -36,5 +36,5 @@ void putChar(void)
 	chars = '\n';
 	_putchar(chars);
 
-	return;
+	return (0);
 }
