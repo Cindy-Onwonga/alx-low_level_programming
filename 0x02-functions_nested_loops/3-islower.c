@@ -12,8 +12,8 @@ int _islower(int c)
 {
 	char ch = c + '0';
 
-	if (ch >= 97 && ch <= 122 )
-		return (1);
-	else
+	if (ch >= 'a' && ch <= 'z')
 		return (0);
+	else
+		return (1);
 }
