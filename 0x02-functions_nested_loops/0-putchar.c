@@ -3,38 +3,39 @@
 /**
  * print_putchar - prints putchar followed by new line
  *
+ * @ch: characters of putchar
+ *
  * Return: Always 0
  */
-int print_putchar(void)
+int print_putchar(char ch)
 {
-	int chars;
 
-	chars = '_';
-	_putchar(chars);
+	ch = '_';
+	_putchar(ch);
 
-	chars = 'p';
-	_putchar(chars);
+	ch = 'p';
+	_putchar(ch);
 
-	chars = 'u';
-	_putchar(chars);
+	ch = 'u';
+	_putchar(ch);
 
-	chars = 't';
-	_putchar(chars);
+	ch = 't';
+	_putchar(ch);
 
-	chars = 'c';
-	_putchar(chars);
+	ch = 'c';
+	_putchar(ch);
 
-	chars = 'h';
-	_putchar(chars);
+	ch = 'h';
+	_putchar(ch);
 
-	chars = 'a';
-	_putchar(chars);
+	ch = 'a';
+	_putchar(ch);
 
-	chars = 'r';
-	_putchar(chars);
+	ch = 'r';
+	_putchar(ch);
 
-	chars = '\n';
-	_putchar(chars);
+	ch = '\n';
+	_putchar(ch);
 
 	return (0);
 }
