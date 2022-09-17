@@ -14,6 +14,11 @@ int main(void)
 	return (0);
 }
 
+/**
+ *  print_putchar - function to print putchar
+ *
+ *  Return: void
+ */
 void print_putchar(void)
 {
 	_putchar('_');
