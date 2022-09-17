@@ -10,12 +10,10 @@
  */
 int _isalpha(int c)
 {
-	char ch = c + '0';
-
-	if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
-		return (0);
-	else
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
+	else
+		return (0);
 
 	return (0);
 }
