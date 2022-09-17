@@ -7,8 +7,19 @@
  *
  * Return: Always 0
  */
-int print_putchar(char ch)
+void print_putchar(void);
+
+int main(void)
 {
+	print_putchar();
+	return (0);
+}
+
+
+void print_putchar(void)
+{
+	char ch;
+
 	ch = '_';
 	_putchar(ch);
 
@@ -36,11 +47,5 @@ int print_putchar(char ch)
 	ch = '\n';
 	_putchar(ch);
 
-	return (0);
-}
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
+	return;
 }
