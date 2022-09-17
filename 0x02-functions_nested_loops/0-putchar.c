@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- * print_putchar - prints putchar followed by new line
+ * main - call function to print putchar
  *
- * @ch: characters of putchar
+ * print_putchar - function to print putchar followed by new line
  *
  * Return: Always 0
  */
-void print_putchar(void);
 
 int main(void)
 {
@@ -15,37 +14,15 @@ int main(void)
 	return (0);
 }
 
-
 void print_putchar(void)
 {
-	char ch;
-
-	ch = '_';
-	_putchar(ch);
-
-	ch = 'p';
-	_putchar(ch);
-
-	ch = 'u';
-	_putchar(ch);
-
-	ch = 't';
-	_putchar(ch);
-
-	ch = 'c';
-	_putchar(ch);
-
-	ch = 'h';
-	_putchar(ch);
-
-	ch = 'a';
-	_putchar(ch);
-
-	ch = 'r';
-	_putchar(ch);
-
-	ch = '\n';
-	_putchar(ch);
-
-	return;
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 }
