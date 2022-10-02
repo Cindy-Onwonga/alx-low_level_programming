@@ -8,12 +8,12 @@
  * Return: last digit
  */
 
-int print_unsigned_last_digit(unsigned int n)
+int print_last_digit(unsigned int n)
 {
 	int ld;
 
 	if (n / 10 != 0)
-		print_unsigned_last_digit(n / 10);
+		print_last_digit(n / 10);
 
 	ld = n % 10;
 	_putchar(ld + '0');
