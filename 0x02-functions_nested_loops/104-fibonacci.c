@@ -15,7 +15,7 @@ int main(void)
 
 	for (i = 3; i <= 101; ++i)
 	{
-		printf("%d, ", l);
+		printf("%ld, ", l);
 		j = k;
 		k = l;
 		l = k + j;
