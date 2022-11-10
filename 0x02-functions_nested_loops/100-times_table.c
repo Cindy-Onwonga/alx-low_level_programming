@@ -1,21 +1,51 @@
 #include "main.h"
 
 /**
- * print_to_98 - print number upto 98
+ * print_times_table - print times table
  *
  * @n: integer input
  *
  * Return: Always 0
  */
 
-void print_to_98(int n)
+void print_times_table(int n)
 {
-	while (n !=98)
+	int j, k, l;
+
+	for (j = 0; j <= n; j++)
 	{
-		if (n < 98);
-		_putchar()
+		if (n < 0 || n > 15)
+			break;
 
-	sum = i + j;
+		for (k = 0; k <= n; k++)
+		{
+			l = j * k;
+			if (k == 0)
+				_putchar(l + '0');
 
-	return (sum);
+			if (l < 10 && k != 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(l + '0');
+			} else if (l >= 10 && l < 100)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar((l / 10) + '0');
+				_putchar((l % 10) + '0');
+			} else if (l >= 100)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar((l / 100) + '0');
+				_putchar(((l / 10) % 10) + '0');
+				_putchar((l % 10) + '0');
+			}
+		}
+		_putchar('\n');
+	}
 }
