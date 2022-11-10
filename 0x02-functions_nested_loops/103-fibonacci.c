@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int i, j, k, l, sum;
+	long int i, j, k, l, sum;
 
 	j = 0;
 	k = 1;
@@ -19,10 +19,8 @@ int main(void)
 		k = l;
 		l = k + j;
 		if (l % 2 == 0)
-		{
-			sum = l;
-			sum
-
+			sum += l;
 	}
+	printf("%ld\n", sum);
 	return (0);
 }
