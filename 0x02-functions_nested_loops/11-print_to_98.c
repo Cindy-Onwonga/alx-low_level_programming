@@ -12,6 +12,7 @@
 void print_to_98(int n)
 {
 	int a;
+
 	a = 98;
 
 	if (n != 98)
