@@ -17,7 +17,7 @@ int main(void)
 		l = k + j;
 		if (i != 98)
 			printf("%lu, ", l);
-		else 
+		else
 			printf("%lu\n", l);
 
 		j = k;
