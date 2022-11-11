@@ -15,8 +15,10 @@ int main(void)
 	for (i = 1; i <= 98; i++)
 	{
 		l = k + j;
-		if (i != 98)
+		if (i <= 91)
+		{
 			printf("%lu, ", l);
+			k += j;
 		else
 			printf("%lu\n", l);
 
