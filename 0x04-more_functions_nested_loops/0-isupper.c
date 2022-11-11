@@ -10,10 +10,8 @@
  */
 int _isupper(int c)
 {
-	char ch = c + '0';
-
-	if (ch >= 'A' && ch <= 'Z')
+	if (c > 64 && c < 91)
 		return (1);
-	else
-		return (0);
+	
+	return (0);
 }
