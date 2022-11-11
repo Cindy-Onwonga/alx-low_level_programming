@@ -1,26 +1,28 @@
 #include <stdio.h>
 
 /**
- * main - print first 10 Fibonacci numbers
+ * main - print even valued Fibonacci terms
  *
  * Return: Always 0
  */
 int main(void)
 {
-	long int j, k, l, sum;
+	unsigned int pre, cur, nxt, sum;
 
-	j = 0;
-	k = 1;
-	l = k + j;
+	pre = 0;
+	cur = 1;
+	sum = 0;
 
-	while (l < 4000000)
+	while (cur < 4000000)
 	{
-		j = k;
-		k = l;
-		l = k + j;
-		if (l % 2 == 0)
-			sum += l;
+		nxt = pre + cur;
+		pre = cur;
+		cur = nxt;
+
+		if (cur % 2 == 0)
+			sum += cur;
 	}
-	printf("%ld\n", sum);
+
+	printf("%d\n", sum);
 	return (0);
 }
