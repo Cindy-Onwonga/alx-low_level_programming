@@ -7,19 +7,21 @@
  */
 int main(void)
 {
-	int i, j, k, l;
+	unsigned long int i, j, k, l;
 
 	j = 0;
 	k = 1;
-	l = k + j;
 
-	for (i = 3; i <= 101; ++i)
+	for (i = 1; i <= 98; i++)
 	{
-		printf("%ld, ", l);
+		l = k + j;
+		if (i != 98)
+			printf("%lu, ", l);
+		else 
+			printf("%lu\n", l);
+
 		j = k;
 		k = l;
-		l = k + j;
 	}
-	printf("\n");
 	return (0);
 }
