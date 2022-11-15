@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - update value of 98
+ * reset_to_98 - update value of 98
  * @n: pointer variable
  *
  * Return: nothing
