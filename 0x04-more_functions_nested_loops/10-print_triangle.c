@@ -1,26 +1,27 @@
 #include "main.h"
 
 /**
- * print_square - draw square shape
+ * print_triangle - draw triangle shape
  *
- * @size: square size
+ * @size: triangle size
  *
  * Return: void
  */
-void print_square(int size)
+void print_triangle(int size)
 {
 	int i, j;
 
-	for (i = 0; i <= size; i++)
+	for (i = 1; i <= size; i++)
 	{
-		for (j = i; j <= size; j++)
-		{
-			if (size <= 0)
-				continue;
+		for (j = i; j < size; j++)
+			_putchar(' ');
 
+		for (j = 1; j <= 1; j++)
 			_putchar('#');
-		}
+
 		_putchar('\n');
 	}
-	_putchar('\n');
+
+	if (size <= 0)
+		_putchar('\n');
 }
