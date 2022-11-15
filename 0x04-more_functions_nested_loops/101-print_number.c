@@ -4,7 +4,7 @@
 /**
  * print_number - print number passed in function
  *
- * @n - integer passed by function
+ * @n: integer passed by function
  *
  * Return: nothing
  */
@@ -17,7 +17,7 @@ void print_number(int n)
 	{
 		c = -n;
 		_putchar('-');
-	} else 
+	} else
 		c = n;
 
 	if (c / 10)
