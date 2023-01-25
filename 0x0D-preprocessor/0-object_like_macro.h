@@ -1,6 +1,6 @@
-#ifndef FUNCTION_LIKE_MACRO_H
-#define FUNCTION_LIKE_MACRO_H
+#ifndef OBJECT_LIKE_MACRO_H
+#define OBJECT_LIKE_MACRO_H
 
-#define ABS(x) ((x) < (0) ? -(x) : (x)) 
+#define SIZE 1024
 
 #endif
