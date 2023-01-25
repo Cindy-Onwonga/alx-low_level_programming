@@ -7,7 +7,7 @@
  * @age: member 2
  * @owner: member 3
  *
- * Description: longer desccription
+ * Description: dog attributes
  */
 
 struct dog
@@ -20,7 +20,6 @@ struct dog
 /**
  * dog_t - typedef for struct dog
  */
-
 typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
