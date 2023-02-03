@@ -6,7 +6,7 @@
  *
  * Return: data inside head node or 0 if list is empty
  */
-void pop_listint(listint_t **head)
+int pop_listint(listint_t **head)
 {
 	listint_t *temp;
 	int num;
