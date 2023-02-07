@@ -7,11 +7,11 @@
  *
  * Return: nothing
  */
-void print_binary(unsigned int n)
+void print_binary(unsigned long int n)
 {
 	unsigned long int this;
 	int i;
-	into count = 0;
+	int count = 0;
 
 	for (i = 63; i >= 0; i--)
 	{
