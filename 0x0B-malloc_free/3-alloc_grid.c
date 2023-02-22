@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * alloc_grid - Main Enry
+ * alloc_grid - Main Entry
  * @width: input
  * @height: input
  * Return: 0
